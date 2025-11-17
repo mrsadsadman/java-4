@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* ================================
+   GLOBAL
+================================ */
+    body {
+        background-color: #343a40;
+        color: #f8f9fa;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 800px;
+        margin-top: 100px;
+        padding: 40px;
+        background-color: #495057;
+        border-radius: 8px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+
+
