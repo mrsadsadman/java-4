@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JSON Chat - WebSocket</title>
+    <script src="js/json-chat.js"></script> </head>
+<body onload="init()">
+    <div id="messages" style="height: 200px; overflow: auto; border: 1px solid #ccc;"></div>
+    <hr>
+    Chatters: <b id="client-count">0</b>
+    <hr>
+    <input id="message" type="text" placeholder="Nhập tin nhắn...">
+    <button onclick="send()">Send</button>
+</body>
+</html>
