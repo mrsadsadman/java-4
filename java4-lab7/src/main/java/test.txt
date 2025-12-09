@@ -1,0 +1,62 @@
+Kiểm thử bằng Postman (Yêu cầu 2)
+
+Sau khi chạy Server (Ví dụ: http://localhost:8080/Lab7), em mở phần mềm Postman lên để test như sau:
+
+Lấy danh sách (GET):
+
+Method: GET
+
+URL: http://localhost:8080/Lab7/employees
+
+Kết quả: Sẽ thấy JSON mảng danh sách nhân viên.
+
+Lấy 1 nhân viên (GET):
+
+Method: GET
+
+URL: http://localhost:8080/Lab7/employees/NV01
+
+Kết quả: JSON thông tin của NV01.
+
+Thêm mới (POST):
+
+Method: POST
+
+URL: http://localhost:8080/Lab7/employees
+
+Body -> chọn raw -> chọn JSON.
+
+Nội dung:
+
+JSON
+{
+    "maNV": "NV04",
+    "hoTen": "Phạm Văn Mới",
+    "gioiTinh": true,
+    "luong": 9999.0
+}
+Send -> Kiểm tra lại bằng lệnh GET xem có NV04 chưa.
+
+Cập nhật (PUT):
+
+Method: PUT
+
+URL: http://localhost:8080/Lab7/employees/NV04 (Sửa NV04)
+
+Body -> raw -> JSON:
+
+JSON
+{
+    "hoTen": "Phạm Văn Đã Sửa",
+    "gioiTinh": false,
+    "luong": 1000.0
+}
+Send.
+
+Xóa (DELETE):
+
+Method: DELETE
+
+URL: http://localhost:8080/Lab7/employees/NV04
+
+Send -> Kiểm tra lại bằng GET xem NV04 mất chưa.
